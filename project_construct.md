@@ -15,6 +15,10 @@ llm-learning/
 │   ├── weather_assistant.py       # 天气助手实战
 │   └── README.md                  # Day3学习笔记
 │
+├── day4/ # Day 4: RAG入门
+│   ├── rag_complete.py            # 完整RAG实现
+│   └── README.md                  # Day4学习笔记
+│
 ├── notes.md                       # 学习笔记
 ├── project_construct.md           # 项目结构说明
 ├── requirements.txt               # 依赖包列表
