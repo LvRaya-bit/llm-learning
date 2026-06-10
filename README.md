@@ -6,8 +6,12 @@
 
 - [x] Day 1: 环境搭建 + 第一次API调用
 - [x] Day 2: 核心参数 + 多轮对话
-- [ ] Day 3: Function Calling
-
+- [x] Day 3: Function Calling
+- [ ] Day 4: RAG入门
+- [ ] Day 5: 流式输出
+- [ ] Day 6: 实战项目
+- [ ] Day 7: 总结整理
+      
 ## 🚀 快速开始
 
 ### 1. 安装依赖
