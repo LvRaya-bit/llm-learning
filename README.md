@@ -8,7 +8,7 @@
 - [x] [Day 2: 核心参数 + 多轮对话](day2/)
 - [x] [Day 3: Function Calling](day3/)
 - [x] [Day 4: RAG入门](day4/)
-- [ ] Day 5: 流式输出
+- [x] [Day 5: 流式输出](day5/)
 - [ ] Day 6: 实战项目
 - [ ] Day 7: 总结整理
       
