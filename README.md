@@ -9,7 +9,7 @@
 - [x] [Day 3: Function Calling](day3/)
 - [x] [Day 4: RAG入门](day4/)
 - [x] [Day 5: 流式输出](day5/)
-- [ ] Day 6: 实战项目
+- [x] [Day 6: 实战项目](day6/)
 - [ ] Day 7: 总结整理
       
 ## 🚀 快速开始
