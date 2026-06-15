@@ -26,6 +26,10 @@ llm-learning/
 │   ├── rag_stream.py              # RAG + 流式输出
 │   └── README.md                  # Day5学习笔记
 │
+├── day6/                          # Day 6: 实战项目（智能客服助手）
+│   ├── smart_assistant.py         # 完整项目代码
+│   └── README.md                  # Day6项目说明
+│
 ├── notes.md                       # 学习笔记
 ├── project_construct.md           # 项目结构说明
 ├── requirements.txt               # 依赖包列表
