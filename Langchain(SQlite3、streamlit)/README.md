@@ -1,6 +1,22 @@
-# LangChain 学习笔记
+# 🤖 智能客服助手 (LangChain + Streamlit)
 
-## 文件说明
+这是一个基于 LangChain 和 Streamlit 构建的智能客服助手 Web 应用。它集成了多种功能，能够回答关于公司政策、订单状态等问题。
+
+## ✨ 主要功能
+
+- 💬 **多轮对话**：能够记住对话上下文，进行连贯的交流。
+- 📚 **RAG 检索**：从 `company_policies.txt` 文档中检索信息，回答关于年假、加班、培训等政策问题。
+- 📦 **订单查询**：通过 Function Calling 调用工具，从 SQLite 数据库中查询真实的订单状态。
+- 🖥️ **友好界面**：提供简洁的 Web 聊天界面，方便交互。
+
+## 🚀 如何运行
+
+1.  **克隆仓库** (或下载本项目)
+    ```bash
+    git clone <你的仓库地址>
+    cd llm-learning/langchain-project
+
+## 结构说明
 langchain/
 ├── app_03.py                     # Web 应用主程序
 ├── 01_quickstart.py              # 第1步：基础调用
