@@ -9,12 +9,30 @@
 - 📦 **订单查询**：通过 Function Calling 调用工具，从 SQLite 数据库中查询真实的订单状态。
 - 🖥️ **友好界面**：提供简洁的 Web 聊天界面，方便交互。
 
+---
+
+## 📦 依赖包说明
+
+| 包名 | 版本要求 | 用途 |
+|------|----------|------|
+| `streamlit` | >=1.28.0 | Web 界面框架，让客服助手变成网页应用 |
+| `langchain` | >=0.2.0 | 核心框架，管理对话、RAG 检索等 |
+| `langchain-openai` | >=0.1.0 | 让 LangChain 调用 DeepSeek 等兼容 OpenAI 格式的模型 |
+| `langchain-core` | >=0.2.0 | LangChain 的基础组件（HumanMessage、AIMessage 等） |
+| `openai` | >=1.0.0 | 底层 HTTP 客户端，被 langchain-openai 依赖 |
+
+---
+
+
 ## 🚀 如何运行
 
 1.  **克隆仓库** (或下载本项目)
     ```bash
     git clone <你的仓库地址>
     cd llm-learning/langchain-project
+
+2、安装依赖包
+    pip install -r requirements.txt
 
 ## 结构说明
 langchain/
