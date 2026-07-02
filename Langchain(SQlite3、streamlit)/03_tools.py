@@ -11,7 +11,7 @@ from langchain_openai import ChatOpenAI
 # ============================================
 llm = ChatOpenAI(
     model="deepseek-chat",
-    openai_api_key="sk-9399d718eecc4599b2392db699e4b8a6",
+    openai_api_key="your_api_key",
     openai_api_base="https://api.deepseek.com",
     temperature=0.3
 )
