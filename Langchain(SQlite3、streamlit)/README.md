@@ -32,3 +32,6 @@ langchain/
 ## 运行方式
 ```bash
 python langchain/01_quickstart.py
+
+#在项目目录下运行
+streamlit run app_03.py
