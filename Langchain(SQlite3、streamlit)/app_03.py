@@ -54,7 +54,7 @@ if "initialized" not in st.session_state:
     # 创建模型
     st.session_state.llm = ChatOpenAI(
         model="deepseek-chat",
-        openai_api_key="sk-b3be0d20b2a145adb8f63cd75758571d",  # 替换成你自己的Key
+        openai_api_key="your_api_key",  # 替换成你自己的Key
         openai_api_base="https://api.deepseek.com",
         temperature=0.3
     )
