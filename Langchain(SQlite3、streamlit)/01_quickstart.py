@@ -9,7 +9,7 @@ from langchain_openai import ChatOpenAI
 # 初始化模型（使用 DeepSeek）
 llm = ChatOpenAI(
     model="deepseek-chat",
-    openai_api_key="sk-9399d718eecc4599b2392db699e4b8a6",  # 替换成你自己的Key
+    openai_api_key="your_api_key",  # 替换成你自己的Key
     openai_api_base="https://api.deepseek.com",
     temperature=0.7
 )
