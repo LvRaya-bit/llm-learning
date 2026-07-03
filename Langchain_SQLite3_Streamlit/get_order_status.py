@@ -1,8 +1,12 @@
 import sqlite3
+import os
+
+# 获取数据库绝对路径
+DB_PATH = os.path.join(os.path.dirname(__file__), "company.db")
 
 # ========== 1. 初始化数据库 ==========
 def init_db():
-    conn = sqlite3.connect("company.db")
+    conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     
     cursor.execute("""
@@ -29,7 +33,7 @@ def init_db():
 
 # ========== 2. 查询订单 ==========
 def get_order_status(order_id: str) -> str:
-    conn = sqlite3.connect("company.db")
+    conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     cursor.execute("SELECT status, date FROM orders WHERE order_id = ?", (order_id,))
     row = cursor.fetchone()
@@ -39,9 +43,3 @@ def get_order_status(order_id: str) -> str:
         status, date = row
         return f"订单{order_id}状态：{status}，下单日期：{date}"
     return f"未找到订单{order_id}"
-
-# # ========== 3. 测试 ==========
-# if __name__ == "__main__":
-#     init_db()
-#     for oid in ["ORD001", "ORD002", "ORD999"]:
-#         print(get_order_status(oid))
