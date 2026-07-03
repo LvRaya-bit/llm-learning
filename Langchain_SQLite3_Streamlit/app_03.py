@@ -2,6 +2,7 @@ import streamlit as st
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, AIMessage
 from get_order_status import get_order_status
+import os  # 新增
 
 # ============================================
 # 1. 页面配置
@@ -14,12 +15,15 @@ st.title("🤖 智能客服助手")
 # ============================================
 def load_knowledge_from_file(file_path: str) -> list:
     knowledge = []
+    # 使用脚本所在目录的绝对路径
+    full_path = os.path.join(os.path.dirname(__file__), file_path)
     try:
-        with open(file_path, "r", encoding="utf-8") as f:
+        with open(full_path, "r", encoding="utf-8") as f:
             lines = f.readlines()
     except FileNotFoundError:
-        st.warning("未找到 company_policies.txt，请确认文件存在")
+        st.warning(f"未找到 {full_path}，请确认文件存在")
         return []
+    # ... 其余代码不变
     current_title = None
     current_content = []
     for line in lines:
@@ -117,11 +121,12 @@ def process_user_input(user_input: str) -> str:
             status = get_order_status(order_id)
             st.session_state.chat_history.append(AIMessage(content=f"订单状态：{status}"))
             return status
+        return "抱歉，不支持该工具"  # 新增
     else:
         st.session_state.chat_history.append(AIMessage(content=response.content))
         return response.content
     
-    return "抱歉，处理出错了"
+    # 删除这行：return "抱歉，处理出错了"
 
 # ============================================
 # 6. 显示对话历史
